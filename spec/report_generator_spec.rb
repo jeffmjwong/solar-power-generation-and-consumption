@@ -1,6 +1,6 @@
 require './src/report_generator'
 
-RSpec.describe CsvDataProcessor do
+RSpec.describe ReportGenerator do
   describe '.generate' do
     let(:energy_data_by_household_id) do
       {
