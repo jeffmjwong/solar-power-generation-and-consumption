@@ -59,6 +59,6 @@ RSpec.describe CsvDataProcessor do
       actual_result = CsvDataProcessor.process(energy_data_in_csv_format)
 
       expect(actual_result).to eq(expected_result)
-     end
+    end
   end
 end
