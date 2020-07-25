@@ -13,7 +13,7 @@ RSpec.describe CsvFileParser do
       expect(csv_object).to be_instance_of(CSV)
     end
 
-    it 'raises Errno::ENOENT error if file is not found' do
+    it 'raises Errno::ENOENT exception if file is not found' do
       expect do
         CsvFileParser.read(File.join(current_directory, invalid_solar_generation_file_path))
       end.to raise_exception(Errno::ENOENT)
