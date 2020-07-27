@@ -18,8 +18,8 @@ class ReportGenerator
       energy_consumed_in_watt_hours = (summary[:energy_consumed_in_kilowatt_hours] * 1000).round
       average_cost_per_person = summary[:average_cost_per_person].round(2)
 
-      first_report << "House id: #{household_id} generated #{energy_generated_in_watt_hours}Wh of electricity\n"
-      first_report << "House id: #{household_id} consumed #{energy_consumed_in_watt_hours}Wh of electricity\n\n"
+      first_report << "House #{household_id} generated #{energy_generated_in_watt_hours}Wh of electricity\n"
+      first_report << "House #{household_id} consumed #{energy_consumed_in_watt_hours}Wh of electricity\n\n"
 
       second_report << "House id: #{household_id} averaged $#{average_cost_per_person} per person\n"
     end
