@@ -18,14 +18,14 @@ RSpec.describe Main do
 
     it 'runs the main program and output the desired results' do
       expected_result = <<~TEXT
-        House id: 1 generated 202083Wh of electricity
-        House id: 1 consumed 145140Wh of electricity
+        House 1 generated 202083Wh of electricity
+        House 1 consumed 145140Wh of electricity
 
-        House id: 2 generated 200308Wh of electricity
-        House id: 2 consumed 145140Wh of electricity
+        House 2 generated 200308Wh of electricity
+        House 2 consumed 145140Wh of electricity
 
-        House id: 3 generated 201194Wh of electricity
-        House id: 3 consumed 145140Wh of electricity
+        House 3 generated 201194Wh of electricity
+        House 3 consumed 145140Wh of electricity
 
         House id: 1 averaged $12.09 per person
         House id: 2 averaged $26.85 per person
